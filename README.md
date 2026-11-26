@@ -1,4 +1,4 @@
-# **Lost Trail**
+# **Lost Trail Godot**
 An upcoming ASCII-style adventure game set in a fantasy world. A project created to:
 
 - Learn the Tkinter library
