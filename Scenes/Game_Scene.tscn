@@ -1,0 +1,76 @@
+[gd_scene format=3 uid="uid://cyywx62cx265g"]
+
+[ext_resource type="Script" uid="uid://c4ut4i7ajifs1" path="res://Scripts/picture_window.gd" id="1_3p3fk"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_g4xdw"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.5330367, 0.53303677, 0.5330365, 1)
+
+[sub_resource type="SystemFont" id="SystemFont_wly01"]
+font_names = PackedStringArray("DejaVu Sans Mono", "Noto Sans Symbols", "Noto Sans Symbols 2")
+allow_system_fallback = false
+
+[node name="Game_Scene" type="Control" unique_id=1428415025]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1515015181]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="Picture_window" type="PanelContainer" parent="." unique_id=808851629]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.7304376
+anchor_bottom = 0.69588894
+offset_right = -4.4401855
+offset_bottom = 87.43994
+theme_override_styles/panel = SubResource("StyleBoxFlat_g4xdw")
+script = ExtResource("1_3p3fk")
+metadata/_edit_use_anchors_ = true
+
+[node name="Picture" type="Label" parent="Picture_window" unique_id=1726284593]
+layout_mode = 2
+theme_override_constants/line_spacing = 1
+theme_override_fonts/font = SubResource("SystemFont_wly01")
+theme_override_font_sizes/font_size = 21
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Text_window" type="PanelContainer" parent="." unique_id=1987935071]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.753
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 21.759949
+offset_bottom = 3.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_styles/panel = SubResource("StyleBoxFlat_g4xdw")
+
+[node name="Action_window" type="PanelContainer" parent="." unique_id=1848075738]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.7265
+anchor_right = 1.0
+anchor_bottom = 0.77359265
+offset_left = -0.8800049
+offset_bottom = 3.5199585
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_g4xdw")
+metadata/_edit_use_anchors_ = true
